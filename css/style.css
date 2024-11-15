@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #008036;
+}
+/* menu(header) */
+
+.ptitle {
+  text-decoration: none;
+  padding: 2px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 8px;
+  color: #ffffff;
+
+}
+
+#header {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #008036;
+  z-index: 10; /* Prioridad más alta */
+}
+
+/* Logo - Se coloca a la izquierda dentro del header */
+.header-logo {
+  width: 80px; /* Tamaño del logo */
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul, ol {
+  list-style:none;
+}
+
+.nav {
+  width:500px; 
+  margin:0 auto; /*Centramos automaticamente*/
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  color:#fff;
+  text-decoration:none;
+  padding: 5px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#008036;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  z-index: 20; /* Asegura que esté encima */
+  background-color: #00803500; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+/* Productos */
+.products-section {
+  padding: 60px 20px;
+  background-image: url('../img/fondo.jpg');
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  height: 100vh; /* Ajusta la altura para que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #008036;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-item {
+  background: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-item h3 {
+  color: #333;
+  margin-top: 10px;
+}
+.product-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #008036;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hero Section - Muestra la imagen completa */
+.hero-section {
+  position: relative;
+  z-index: 1; /* La imagen de fondo tendrá prioridad baja */
+}
+.hero-section {
+  background-image: url('../img/fondoestilovangogh.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+.btn-ct {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #333;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Map Section */
+.maps-section {
+  padding: 60px 20px;
+  background-color: #ffffff83;
+}
+
+.maps-content {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.maps-descripcion {
+  flex: 1;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.maps-descripcion h3 {
+  color: #008036;
+  margin-bottom: 10px;
+}
+
+.maps-descripcion p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #0f6302;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .footer-section {
+  flex: 1;
+  margin: 10px;
+  text-align:center;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  color: #0f6302;
+  text-decoration: none;
+  font-size: 0.9rem;
+} */
+
+.footer-info {
+  text-align: center;
+  margin-top: 2px;
+  color: #ff8f8f;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center; /* Centra los enlaces */
+  gap: 20px; /* Espaciado entre los enlaces */
+  flex-wrap: wrap; /* Permite que los enlaces se ajusten en pantallas pequeñas */
+}
+
+.footer-links a {
+  color: #0f6302;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

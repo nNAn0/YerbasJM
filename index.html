@@ -1,0 +1,139 @@
+
+  <!DOCTYPE html>
+  <html lang="es"> <!-- idioma -->
+  <head>
+      <meta charset="UTF-8"> <!-- conjunto de caracteres UTF-8, si se utiliza en el front, tambien en el backedn  -->
+     <!-- meta => metadato -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- titulo de la pagina -->
+      <title>YerbasJM</title>
+      <!-- conectar mi css a mi pagina -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- logo de la pagina  -->
+      <link rel="icon" href="img/Logojm.jpg" sizes="192x192" />
+      <!-- referencias para google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+      <!-- font awesome para iconos-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+  <body>
+  
+    <header>
+  <!-- container lo uso como partes de la pagina. en este caso conteiner = -->
+   <!--  menu -->
+      <div class="container">
+  <!-- logo -->
+        <div class="logo" id="header">
+          <nav><!-- abro la etiqueta -->
+            <ul class="nav">
+              <li><a href="#">
+          <img src="img/Logojm.jpg" alt="Logo de la pagina YERBASJM" width="60px" height="60px"></a>   
+          <ul>
+            <li><a href="#pag-inicio">Bienvenidos a la página</a></li>
+            <li>
+              <a href="#productos">Productos</a>
+            </li>
+            <li>
+              <a href="#maps">Ubicacion</a>
+            </li>
+          </ul>
+          </ul>
+        </nav>
+  
+        </div>
+  <!-- titulo -->
+          <div class="title"><a class="ptitle" href="">
+           <h2 >YerbasJM</h2></a>
+          </div>
+      </div>
+           
+    </header>
+
+  <!-- presentacion-->
+  <section id="pag-inicio" class="hero-section">
+    <div class="hero-content">
+      <h1>Bienvenidos a YerbasJM</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+         Deleniti tempora repellat porro vitae iure fuga quidem minima officiis amet obcaecati non,
+          deserunt impedit, optio temporibus autem veniam sit, earum dolor?</p>
+      <a href="#" class="btn-ct">Mirar productos</a>
+      <a href="formulario.html" class="btn-ct">contactanos</a>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="products-section">
+    <h2 class="section-title">Nuestros Productos</h2>
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="product-item">
+        <img src="img/sol_y_lluvia.jpg" alt="Venta de Yerbas">
+        <h3>Venta de Yerbas</h3>
+        <p>Descubre nuestra selección de yerbas frescas y de alta calidad.</p>
+        <a href="#" class="btn">Ver Más</a>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product-item">
+        <img src="img/bala 1lt.webp" alt="Venta de Termos">
+        <h3>Venta de Termos</h3>
+        <p>Termos elegantes y duraderos para mantener tus bebidas a la temperatura ideal.</p>
+        <a href="#" class="btn">Ver mss</a>
+      </div>
+      <!-- Producto 3 -->
+      <div class="product-item">
+        <img src="img/matesyyerberos.png" alt="Venta de Mates y Yerberos">
+        <h3>Venta de Mates y Yerberos</h3>
+        <p>Mates artesanales y yerberos, esenciales para cualquier amante del mate.</p>
+        <a href="#" class="btn">Ver mas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa y Descripción -->
+  <section id="maps" class="maps-section">
+    <div class="maps-content">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4708110617194!2d-58.440446723636505!3d-34.61754077294943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbb7f786e557%3A0xc11c271802293de7!2syerbasjm!5e0!3m2!1ses!2sar!4v1731109975060!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="maps-descripcion">
+        <h3>Encuentra Nuestra Ubicación</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas beatae perferendis laboriosam ipsa quasi eligendi corrupti molestias modi accusantium, nisi at vel facilis officiis? Non laboriosam dolorem officia accusantium!</p>
+        <p><strong>Cómo llegar:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatem fugiat necessitatibus vero. Adipisci provident accusamus blanditiis magnam dolores officiis, quos, eligendi nulla fugiat amet ipsam eum velit, at aperiam!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Conócenos</h4>
+        <p>Productos naturales y artesanales, de nuestra tierra a tu mesa.</p>
+      </div>
+      <!-- <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="#pag-inicio">Inicio</a>
+        <a href="#nosotros">Contactanos</a>
+        <a href="https://www.facebook.com/100063553419985/posts/521084803133607/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yerbasjm/"><i class="fab fa-instagram"></i></a>
+      </div> -->
+      <div class="footer-section">
+        <h4>Podes buscarnos en</h4>
+        <div class="footer-links">
+          <a href="#pag-inicio">Inicio</a>
+          <a href="#nosotros">Contáctanos</a>
+          <a href="https://www.facebook.com/100063553419985/posts/521084803133607/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/yerbasjm/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2024 YerbasJM | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
